@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simu-Impots</title>
+    <script src="main.js"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <form action="#">
+        <div>
+          <label>Salaire Citoyen 1: </label>
+          <input type="number" name="wage1" id="wage1" required>
+        </div>
+        <div>
+          <label>Salaire Citoyen 2: </label>
+          <input type="number" name="wage2" id="wage2">
+        </div>
+        <div>
+          <input type="button" value="Calculer !" onclick="compute()">
+        </div>
+    </form>
   </body>
+
+  <div>
+    <label id="together"></label>
+  </div>
+
+  <div>
+    <label id="separate"></label>
+  </div>
 </html>
